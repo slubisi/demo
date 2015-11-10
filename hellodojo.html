@@ -12,10 +12,11 @@
 
     <script>
         require([
-            'dojo/dom'
-        ], function (dom, domConstruct) {
-            var greetingNode = dom.byId('greeting');
-            domConstruct.place('<em> Dojo!</em>', greetingNode);
+            'dojo/dom',
+            'dojo/domReady!'
+        ], function (dom) {
+            var greeting = dom.byId('greeting');
+            greeting.innerHTML += ' from Dojo!';
         });
     </script>
 </body>
