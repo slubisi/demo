@@ -27,9 +27,11 @@
 
     <script>
         require([
+            'dojo/dom',
             'demo/myModule'
         ], function (myModule) {
-            myModule.setText('greeting', 'Hello Dojo!');
+            var greeting = dom.byId('greeting');
+            greeting.innerHTML += ' from Dojo!';
 
             setTimeout(function () {
                 myModule.restoreText('greeting');
