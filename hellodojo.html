@@ -26,17 +26,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
 
     <script>
-        require([
-            'dojo/dom',
-            'dojo/domReady!'
-        ], function (myModule) {
-            var greeting = dom.byId('greeting');
-            greeting.innerHTML += ' from Dojo!';
-
-            setTimeout(function () {
-                myModule.restoreText('greeting');
-            }, 3000);
-        });
+       require([
+    'dojo/dom',
+    'dojo/domReady!'
+], function (dom) {
+    var greeting = dom.byId('greeting');
+    greeting.innerHTML += ' from Dojo!';
+});
     </script>
 </body>
 </html>
