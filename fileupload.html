@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  	.uploadBtn{
+    border:1px solid #333333;
+    background:url(buttonEnabled.png) #d0d0d0 repeat-x scroll 0px top;
+    font-size:14px;
+    width:201px;
+    height:30px;
+    vertical-align:middle; /* emulates a <button> if node is not */
+    text-align:center;
+	}
+	.uploadHover{
+    background-image:url(buttonHover.png);
+    cursor:pointer;
+    font-weight:bold;
+	}
+
+	.uploadPress{
+    background-image:url(buttonActive.png);
+	}
+	.uploadDisabled{
+    background-image:none;
+    background-color:#666;
+    color:#999;
+    border:1px solid #999;
+	}
+  </style>
+  	<title>File Uploader</title>
+  	<script src="fileupload.js"></script>
+  </head>
+<body>
+  <div id="btn" class="uploadBtn">Select Files</div>
+
+</body>
+</html>
